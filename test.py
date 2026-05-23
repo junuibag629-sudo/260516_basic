@@ -13,7 +13,10 @@ while x != 0:
         print(a * b)
     elif x == 4:
         a,b = map(int,input('나누고 싶은 숫자 2개를 입력하시오:').split( ))
-        print(a / b)
+        if b == 0:
+            print('0으로는 나눌 수 없습니다')
+        else:
+            print(a / b)
     elif x == 0:
         print(x, "종료")
         
